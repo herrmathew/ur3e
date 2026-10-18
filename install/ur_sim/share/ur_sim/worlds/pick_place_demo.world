@@ -1,0 +1,407 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="pick_place_demo">
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <plugin name="gazebo_ros_init" filename="libgazebo_ros_init.so">
+      <ros>
+        <namespace>/gazebo</namespace>
+      </ros>
+    </plugin>
+
+    <plugin name="gazebo_ros_factory" filename="libgazebo_ros_factory.so">
+      <ros>
+        <namespace>/gazebo</namespace>
+      </ros>
+    </plugin>
+
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <ros>
+        <namespace>/gazebo</namespace>
+      </ros>
+      <update_rate>10</update_rate>
+    </plugin>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Human Actor -->
+    <actor name="human_worker">
+      <pose>3 0 0.0 0 0 0</pose>
+      <skin>
+        <filename>walk.dae</filename>
+        <scale>0.8</scale>
+      </skin>
+      <animation name="walking">
+        <filename>walk.dae</filename>
+        <scale>0.8</scale>
+        <interpolate_x>true</interpolate_x>
+      </animation>
+      <script>
+        <loop>true</loop>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walking">
+          <!-- Start at safe distance -->
+          <waypoint>
+            <time>0</time>
+            <pose>2.5 0 0 0 0 -1.57</pose>
+          </waypoint>
+          <!-- Move into warning zone (1.5-2.0m) -->
+          <waypoint>
+            <time>3</time>
+            <pose>1.8 0 0 0 0 -1.57</pose>
+          </waypoint>
+          <!-- Move into dead zone (<1.5m) -->
+          <waypoint>
+            <time>6</time>
+            <pose>1.2 0 0 0 0 -1.57</pose>
+          </waypoint>
+          <!-- Get very close to robot -->
+          <waypoint>
+            <time>9</time>
+            <pose>0.8 0 0 0 0 -1.57</pose>
+          </waypoint>
+          <!-- Move back to dead zone -->
+          <waypoint>
+            <time>12</time>
+            <pose>1.2 0 0 0 0 1.57</pose>
+          </waypoint>
+          <!-- Move back to warning zone -->
+          <waypoint>
+            <time>15</time>
+            <pose>1.8 0 0 0 0 1.57</pose>
+          </waypoint>
+          <!-- Return to safe zone -->
+          <waypoint>
+            <time>18</time>
+            <pose>2.5 0 0 0 0 1.57</pose>
+          </waypoint>
+          <!-- Complete the cycle -->
+          <waypoint>
+            <time>21</time>
+            <pose>2.5 0 0 0 0 -1.57</pose>
+          </waypoint>
+        </trajectory>
+      </script>
+    </actor>
+
+    <!-- Warning Zone Visual (Yellow) -->
+    <model name="warning_zone">
+      <static>true</static>
+      <pose>0 0 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <cylinder>
+              <radius>2.0</radius>
+              <length>0.02</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0.8 0 0.2</ambient>
+            <diffuse>1 0.8 0 0.2</diffuse>
+            <specular>1 0.8 0 0.2</specular>
+            <transparency>0.8</transparency>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Stop Zone Visual (Red) -->
+    <model name="stop_zone">
+      <static>true</static>
+      <pose>0 0 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <cylinder>
+              <radius>1.5</radius>
+              <length>0.02</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 0 0 0.2</ambient>
+            <diffuse>1 0 0 0.2</diffuse>
+            <specular>1 0 0 0.2</specular>
+            <transparency>0.8</transparency>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Robot Base Table -->
+    <model name="robot_table">
+      <static>true</static>
+      <pose>0 0 0.3 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.4 0.4 0.6</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.4 0.4 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Work Table -->
+    <model name="work_table">
+      <static>true</static>
+  <pose>0.6 0.0 0.8 0 0 0</pose> <!-- Raise table to z=0.9 -->
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.6 0.8 0.04</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.6 0.8 0.04</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+      <!-- Table legs -->
+      <link name="leg1">
+  <pose>0.25 0.35 -0.45 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+      <link name="leg2">
+  <pose>0.25 -0.35 -0.45 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+      <link name="leg3">
+  <pose>-0.25 0.35 -0.45 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+      <link name="leg4">
+  <pose>-0.25 -0.35 -0.45 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.02</radius>
+              <length>0.9</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Colored cubes for pick and place -->
+    <!-- Red cube -->
+    <model name="red_cube">
+  <pose>0.6 -0.2 0.92 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.04 0.04 0.04</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.04 0.04 0.04</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000027</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>0.000027</iyy>
+            <iyz>0.0</iyz>
+            <izz>0.000027</izz>
+          </inertia>
+        </inertial>
+      </link>
+    </model>
+
+    <!-- Blue cube -->
+    <model name="blue_cube">
+  <pose>0.6 0.2 0.92 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.04 0.04 0.04</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.04 0.04 0.04</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000027</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>0.000027</iyy>
+            <iyz>0.0</iyz>
+            <izz>0.000027</izz>
+          </inertia>
+        </inertial>
+      </link>
+    </model>
+
+    <!-- Yellow cube -->
+    <model name="yellow_cube">
+  <pose>0.6 0.0 0.92 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.04 0.04 0.04</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.04 0.04 0.04</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000027</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>0.000027</iyy>
+            <iyz>0.0</iyz>
+            <izz>0.000027</izz>
+          </inertia>
+        </inertial>
+      </link>
+    </model>
+    <plugin name="gazebo_link_attacher" filename="libgazebo_link_attacher.so"/>
+  </world>
+</sdf>

@@ -1,0 +1,6 @@
+Invoking command in '/home/sijin/ur_ws/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/IFRA_LinkAttacher/linkattacher_msgs -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/linkattacher_msgs
+Invoked command in '/home/sijin/ur_ws/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/IFRA_LinkAttacher/linkattacher_msgs -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/linkattacher_msgs
+Invoking command in '/home/sijin/ur_ws/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/linkattacher_msgs -- -j12 -l12
+Invoked command in '/home/sijin/ur_ws/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/linkattacher_msgs -- -j12 -l12
+Invoking command in '/home/sijin/ur_ws/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/linkattacher_msgs
+Invoked command in '/home/sijin/ur_ws/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/linkattacher_msgs

@@ -1,0 +1,1 @@
+ros2 launch ur_sim spawn_ur3e_gripper.launch.py world_path:=/home/admin-dev/ur_ws/src/ur_sim/worlds/human_inter_demo.world

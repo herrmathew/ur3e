@@ -1,0 +1,128 @@
+[0.056s] Invoking command in '/home/sijin/ur_ws/build/ur_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/ur_sim -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/ur_sim
+[0.199s] -- The C compiler identification is GNU 11.4.0
+[0.365s] -- The CXX compiler identification is GNU 11.4.0
+[0.384s] -- Detecting C compiler ABI info
+[0.582s] -- Detecting C compiler ABI info - done
+[0.613s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.613s] -- Detecting C compile features
+[0.614s] -- Detecting C compile features - done
+[0.622s] -- Detecting CXX compiler ABI info
+[0.802s] -- Detecting CXX compiler ABI info - done
+[0.824s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.826s] -- Detecting CXX compile features
+[0.826s] -- Detecting CXX compile features - done
+[0.829s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.214s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.394s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[1.402s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.466s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.474s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.488s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.510s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.535s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.607s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.611s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.785s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.851s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.921s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.943s] -- Looking for pthread.h
+[2.173s] -- Looking for pthread.h - found
+[2.173s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.361s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.367s] -- Found Threads: TRUE  
+[2.546s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[2.550s] -- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[2.639s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[2.707s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.999s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.142s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.144s] -- Added test 'lint_cmake' to check CMake code style
+[3.145s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.150s] -- Added test 'xmllint' to check XML markup files
+[3.153s] -- Configuring done
+[3.161s] -- Generating done
+[3.168s] -- Build files have been written to: /home/sijin/ur_ws/build/ur_sim
+[3.193s] Invoked command in '/home/sijin/ur_ws/build/ur_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/ur_sim -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/ur_sim
+[3.194s] Invoking command in '/home/sijin/ur_ws/build/ur_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/ur_sim -- -j12 -l12
+[3.295s] Built target ament_cmake_python_copy_ur_sim
+[3.721s] running egg_info
+[3.722s] creating ur_sim.egg-info
+[3.723s] writing ur_sim.egg-info/PKG-INFO
+[3.723s] writing dependency_links to ur_sim.egg-info/dependency_links.txt
+[3.723s] writing top-level names to ur_sim.egg-info/top_level.txt
+[3.724s] writing manifest file 'ur_sim.egg-info/SOURCES.txt'
+[3.728s] reading manifest file 'ur_sim.egg-info/SOURCES.txt'
+[3.730s] writing manifest file 'ur_sim.egg-info/SOURCES.txt'
+[3.796s] Built target ament_cmake_python_build_ur_sim_egg
+[3.833s] Invoked command in '/home/sijin/ur_ws/build/ur_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/ur_sim -- -j12 -l12
+[3.834s] Invoking command in '/home/sijin/ur_ws/build/ur_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/ur_sim
+[3.845s] -- Install configuration: ""
+[3.845s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/environment/pythonpath.sh
+[3.845s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/environment/pythonpath.dsv
+[3.846s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim-0.0.0-py3.10.egg-info
+[3.846s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.847s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim-0.0.0-py3.10.egg-info/top_level.txt
+[3.847s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim-0.0.0-py3.10.egg-info/PKG-INFO
+[3.847s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.848s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim
+[3.848s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/scripts
+[3.848s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/scripts/human_mover.py
+[3.849s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/scripts/__init__.py
+[3.849s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/move_robot.py
+[3.849s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/admittance_controller.py
+[3.850s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/human_mover.py
+[3.850s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/__init__.py
+[3.850s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/ros2 launch ur_sim spawn_ur3e_gripper.sh
+[3.851s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/human_interaction_gesture.py
+[3.851s] -- Installing: /home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/proximity_monitor.py
+[3.914s] Listing '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim'...
+[3.914s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/__init__.py'...
+[3.914s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/admittance_controller.py'...
+[3.914s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/human_interaction_gesture.py'...
+[3.915s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/human_mover.py'...
+[3.915s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/move_robot.py'...
+[3.915s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/proximity_monitor.py'...
+[3.915s] Listing '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/scripts'...
+[3.915s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/scripts/__init__.py'...
+[3.915s] Compiling '/home/sijin/ur_ws/install/ur_sim/local/lib/python3.10/dist-packages/ur_sim/scripts/human_mover.py'...
+[3.924s] -- Installing: /home/sijin/ur_ws/install/ur_sim/lib/ur_sim/proximity_monitor
+[3.925s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch
+[3.925s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/view_ur3e_spawn.launch.py
+[3.925s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/spawn_ur3e_gripper.launch.py
+[3.925s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/ur3e_cartesian_control.launch.py
+[3.926s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/combined_demo.launch.py
+[3.926s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/spawn_ur3e.launch.py
+[3.926s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/spawn_ur3e_gripper_moveit.launch.py
+[3.927s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/spawn_ur3e_gripper_moveit2.launch.py
+[3.927s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/launch/view_ur3e_spawn_gripper.launch.py
+[3.927s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/worlds
+[3.928s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/worlds/pick_place_demo.world
+[3.928s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/worlds/human_inter_demo.world
+[3.928s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/worlds/ur_robot_world.world
+[3.928s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/urdf
+[3.929s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/urdf/ur3e_spawn.urdf.xacro
+[3.929s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/urdf/ur3e_macro.xacro
+[3.929s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/urdf/ur3e.ros2_control.xacro
+[3.930s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/urdf/ur3e_spawn_gripper.urdf.xacro
+[3.930s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/urdf/robotiq_gripper_macro.xacro
+[3.930s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/urdf/robotiq_gripper.ros2_control.xacro
+[3.930s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/config
+[3.931s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/config/initial_positions.yaml
+[3.931s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/config/ur3e_controllers_gripper.yaml
+[3.931s] -- Installing: /home/sijin/ur_ws/install/ur_sim/lib/ur_sim/proximity_monitor.py
+[3.932s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ament_index/resource_index/package_run_dependencies/ur_sim
+[3.932s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ament_index/resource_index/parent_prefix_path/ur_sim
+[3.933s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/environment/ament_prefix_path.sh
+[3.933s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/environment/ament_prefix_path.dsv
+[3.933s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/environment/path.sh
+[3.934s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/environment/path.dsv
+[3.934s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/local_setup.bash
+[3.935s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/local_setup.sh
+[3.935s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/local_setup.zsh
+[3.935s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/local_setup.dsv
+[3.935s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/package.dsv
+[3.936s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ament_index/resource_index/packages/ur_sim
+[3.936s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/cmake/ur_simConfig.cmake
+[3.936s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/cmake/ur_simConfig-version.cmake
+[3.937s] -- Installing: /home/sijin/ur_ws/install/ur_sim/share/ur_sim/package.xml
+[3.942s] Invoked command in '/home/sijin/ur_ws/build/ur_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/ur_sim

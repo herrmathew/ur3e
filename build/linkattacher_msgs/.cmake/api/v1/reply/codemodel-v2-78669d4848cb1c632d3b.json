@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-98e5778dc09590386cf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "linkattacher_msgs__py",
+					"jsonFile" : "directory-linkattacher_msgs__py-a16ac9636798cdcd99b4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sijin/ur_ws/build/linkattacher_msgs/linkattacher_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "linkattacher_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_linkattacher_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_linkattacher_msgs_egg-80b6db5057367bc9d3e2.json",
+					"name" : "ament_cmake_python_build_linkattacher_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_linkattacher_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_linkattacher_msgs-529e47e39de75aaeef70.json",
+					"name" : "ament_cmake_python_copy_linkattacher_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs-e7919e1298c9930c568e.json",
+					"name" : "linkattacher_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__cpp-0123d842a50b505439b8.json",
+					"name" : "linkattacher_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "linkattacher_msgs__py::@2cdba3e1dc23028bcc75",
+					"jsonFile" : "target-linkattacher_msgs__py-ff20235e88edbc0aa8e9.json",
+					"name" : "linkattacher_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_generator_c-43a31aedc4b331c20a7d.json",
+					"name" : "linkattacher_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_generator_py-8826422f3c245968e128.json",
+					"name" : "linkattacher_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_c-e7a6a3a1b1adff234855.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_c__pyext-47aa817bc1f87d1afa8e.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_cpp-4eeeb10f783751be9cb2.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_fastrtps_c-b8d18bd5fec1d3a2b3bf.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_fastrtps_c__pyext-0ad60227e553928623b1.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_fastrtps_cpp-f75ad25d487bba22289f.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_introspection_c-22c8ffadaa79c66c4836.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_introspection_c__pyext-c34a4b2fdd5bf8203ba6.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs__rosidl_typesupport_introspection_cpp-688d3e222e18c850f1be.json",
+					"name" : "linkattacher_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkattacher_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkattacher_msgs_uninstall-38b8fd46d707296968d0.json",
+					"name" : "linkattacher_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bd915163b6e54dfe5c3f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sijin/ur_ws/build/linkattacher_msgs",
+		"source" : "/home/sijin/ur_ws/src/IFRA_LinkAttacher/linkattacher_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
