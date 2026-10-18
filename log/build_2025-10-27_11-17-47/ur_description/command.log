@@ -1,6 +1,0 @@
-Invoking command in '/home/sijin/ur_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/Universal_Robots_ROS2_Description -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/ur_description
-Invoked command in '/home/sijin/ur_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/Universal_Robots_ROS2_Description -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/ur_description
-Invoking command in '/home/sijin/ur_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/ur_description -- -j12 -l12
-Invoked command in '/home/sijin/ur_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/ur_description -- -j12 -l12
-Invoking command in '/home/sijin/ur_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/ur_description
-Invoked command in '/home/sijin/ur_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/ur_description

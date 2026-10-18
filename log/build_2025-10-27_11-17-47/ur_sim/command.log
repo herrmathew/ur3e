@@ -1,6 +1,0 @@
-Invoking command in '/home/sijin/ur_ws/build/ur_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/ur_sim -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/ur_sim
-Invoked command in '/home/sijin/ur_ws/build/ur_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sijin/ur_ws/src/ur_sim -DCMAKE_INSTALL_PREFIX=/home/sijin/ur_ws/install/ur_sim
-Invoking command in '/home/sijin/ur_ws/build/ur_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/ur_sim -- -j12 -l12
-Invoked command in '/home/sijin/ur_ws/build/ur_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sijin/ur_ws/build/ur_sim -- -j12 -l12
-Invoking command in '/home/sijin/ur_ws/build/ur_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/ur_sim
-Invoked command in '/home/sijin/ur_ws/build/ur_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sijin/ur_ws/build/ur_sim

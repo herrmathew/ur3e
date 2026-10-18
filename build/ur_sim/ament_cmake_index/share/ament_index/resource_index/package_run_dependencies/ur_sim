@@ -1,1 +1,0 @@
-xacro;rclcpp;rclpy;std_msgs;trajectory_msgs;geometry_msgs;gazebo_msgs;tf2_ros;numpy;ament_lint_auto;ament_lint_common
